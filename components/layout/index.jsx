@@ -4,11 +4,12 @@ import Footer from 'components/layout/footer'
 
 const Layout = ({ children })=>{
     return (
-        <>
+        <div className='bg-[#50f3fa]'>
             <NavigationBar />
-             {children}
+            {children}
             <Footer />
-        </>
+        </div>
+
     )
 }
 
