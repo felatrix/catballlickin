@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Image = ({source,alt,className})=>{
     return (
@@ -6,4 +6,4 @@ const Image = ({source,alt,className})=>{
     )
 }
 
-export default Image
+export default Image;

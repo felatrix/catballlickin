@@ -6,6 +6,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontSize: {
+      xxs:['13px','20px'],
       xs: ['18px', '31px'],
       s: ['20px', '34px'],
       sm: ['24px', '41px'],
@@ -15,14 +16,15 @@ module.exports = {
     },
     colors:{
       nileblue:'#1A2F54',
-      anakiwa:'#9EF9FC',
+      anakiwa:'#50f3fa',
       parisDaisy:'#FDF177',
       screaminGreen:'#6DF474',
       cinnamon:'#825302',
       yellowOrange:'#FFC142',
       astronaut:'#263776',
       broom:'#FFEA28',
-      white:'#ffffff'
+      white:'#ffffff',
+      pinkLight:'#FFC7C7'
     },
     screens: {
       'mobile': '360px',
