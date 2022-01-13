@@ -1,9 +1,11 @@
-import React from "react";
+import React from 'react';
 
 const Rarity = () => {
   return (
     <div className="container mx-auto text-center text-nileblue">
-      <h1 className="text-m font-bold mb-[20px]">How rare is My Ball-Lickin’ Cats?</h1>
+      <h1 className="text-m font-bold mb-[20px]">
+        How rare is My Ball-Lickin’ Cats?
+      </h1>
       <p className="text-xs">
         The rarity tier of the Ball-Lickin’ Cats is determined based on the
         total of rarity points. Combination between race and fur color can be
