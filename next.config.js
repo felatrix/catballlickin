@@ -2,7 +2,7 @@ const withTM = require('next-transpile-modules')(['swiper', 'react-id-swiper']);
 
 module.exports = withTM({
   reactStrictMode: true,
-  experimental: { esmExternals: 'loose' },
+  experimental: { esmExternals: true },
   env: {
     image_cdn: 'https://cdn.ball-lickincats.com/'
   },

@@ -1,16 +1,16 @@
-import { React, useState, useEffect } from "react";
-import Image from "components/base/image";
-import Button from "components/base/button";
-import Hamburger from "components/layout/hamburger";
-import Modal from "components/base/modal";
+import { React, useState, useEffect } from 'react';
+import Image from 'components/base/image';
+import Button from 'components/base/button';
+import Hamburger from 'components/layout/hamburger';
+import Modal from 'components/base/modal';
 
 const NavigationBar = () => {
   const menuData = [
-    { title: "About", linkHref: "/" },
-    { title: "Rarity", linkHref: "/" },
-    { title: "Roadmap", linkHref: "/" },
-    { title: "Team", linkHref: "/" },
-    { title: "FAQ", linkHref: "/" },
+    { title: 'About', linkHref: '/' },
+    { title: 'Rarity', linkHref: '/' },
+    { title: 'Roadmap', linkHref: '/' },
+    { title: 'Team', linkHref: '/' },
+    { title: 'FAQ', linkHref: '/' },
   ];
   const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -33,10 +33,10 @@ const NavigationBar = () => {
             );
           })}
         </div>
-        <Button text={"Mint Now"} className={"mobile:hidden tablet:flex"} />
-        <div className={"mobile:block tablet:hidden"}>
+        <Button text={'Mint Now'} className={'mobile:hidden tablet:flex'} />
+        <div className={'mobile:block tablet:hidden'}>
           <Hamburger
-            className={`${mobileMenu && "open"} mobile:z-10`}
+            className={`${mobileMenu && 'open'} mobile:z-10`}
             onClick={() => setMobileMenu(!mobileMenu)}
           />
           <Modal
@@ -47,7 +47,12 @@ const NavigationBar = () => {
                   const { linkHref, title } = menu;
                   return (
                     <div className="mx-[20px] h-max">
-                      <Button link href={linkHref} text={title} fontSize={"sm"}/>
+                      <Button
+                        link
+                        href={linkHref}
+                        text={title}
+                        fontSize={'sm'}
+                      />
                     </div>
                   );
                 })}
